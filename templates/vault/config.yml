@@ -1,0 +1,7 @@
+name: "Vault"
+description: |
+  Vault credential store from Hashicorp.
+version: "0.0.1"
+category: "Security"
+maintainer: "thrucker"
+license: "custom"

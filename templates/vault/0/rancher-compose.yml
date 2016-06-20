@@ -1,0 +1,20 @@
+.catalog:
+  name: "Vault"
+  version: "0.0.1"
+  description: |
+    Creates a Vault credential store.
+  minimum_rancher_version: "1.0.2"
+  questions:
+  - variable: "consul_service"
+    label: "Consul service"
+    required: true
+    type: "service"
+  - variable: "vault_config"
+    label: "Vault config"
+    required: true
+    type: "string"
+vault:
+  scale: 1
+  metadata:
+    config.hcl: |
+      ${vault_config}
