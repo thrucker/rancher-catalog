@@ -12,7 +12,7 @@
   - variable: "vault_config"
     label: "Vault config"
     required: true
-    type: "string"
+    type: "multiline"
 vault:
   scale: 1
   metadata:
